@@ -1,0 +1,25 @@
+body {
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:14px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:#fff;
+}
+
+.main-header {
+  position:absolute;
+  top:20%;
+}
+
+.links-row {
+  margin-top:25px;
+}
+
+.home-link {
+  background-color:#de0f0d;
+  border-radius:4px;
+}
+
+.btn.btn-default.btn-block.btn-lg.home-link {
+}
+
