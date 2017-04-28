@@ -1,3 +1,4 @@
+// required packages
 var bodyParser = require('body-parser');
 var express = require('express');
 var path = require('path');
@@ -16,9 +17,6 @@ app.use(bodyParser.json())
 // include API route first because that's where we're pulling data to display inside out html pages
 require('./app/routing/apiRoutes.js')(app);
 require('./app/routing/htmlRoutes.js')(app);
-
-
-
 
 // show server running when executing 'node server.js'
 app.listen(PORT, function() {
