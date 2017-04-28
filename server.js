@@ -9,7 +9,7 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // aloow us to serve static files (images, CSS, etc.)
-// dirname evalutes to folder path 
+// dirname evalutes to folder path
 app.use(express.static(__dirname));
 
 // parse application/x-www-form-urlencoded
