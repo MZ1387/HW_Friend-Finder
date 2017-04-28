@@ -8,6 +8,10 @@ var app = express();
 // work on local host & don't reconfigured when deployed live
 var PORT = process.env.PORT || 8080;
 
+// aloow us to serve static files (images, CSS, etc.)
+// dirname evalutes to folder path 
+app.use(express.static(__dirname));
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
